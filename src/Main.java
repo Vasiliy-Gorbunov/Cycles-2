@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -94,4 +95,16 @@ public class Main {
         }
     }
 
+    public static void task8() {
+        System.out.println("\nЗадание 8:");
+        int currentYear = 2022;
+        int before = 200;
+        int after = 100;
+        int cometEvery = 79;
+        for (int i = 0; i <= currentYear + after; i = i + cometEvery) {
+            if (i >= currentYear - before) {
+                System.out.println(i);
+            }
+        }
+    }
 }
