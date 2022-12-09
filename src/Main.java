@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -33,7 +34,7 @@ public class Main {
     }
 
     public static void task3() {
-        System.out.println("\nЗадание 3:");
+        System.out.println("\n\nЗадание 3:");
         int population = 12_000_000;
         int bornPer1000 = 17;
         int deathPer1000 = 8;
@@ -51,6 +52,19 @@ public class Main {
             total = total + total * 7 / 100;
             i++;
             System.out.println("Месяц " + i + ". Сумма накоплений равна: " + total + " рублей.");
+        }
+    }
+
+    public static void task5() {
+        System.out.println("\nЗадание 5:");
+        int total = 15000;
+        int i = 0;
+        while (total < 12_000_000) {
+            total = total + total * 7 / 100;
+            i++;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + ". Сумма накоплений равна: " + total + " рублей.");
+            }
         }
     }
 }
