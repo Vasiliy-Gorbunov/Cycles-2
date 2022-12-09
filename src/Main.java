@@ -69,13 +69,14 @@ public class Main {
             }
         }
     }
+
     public static void task6() {
         System.out.println("\nЗадание 6:");
         int total = 15000;
         int years = 9;
         int monthPerYear = 12;
         int i = 0;
-        while (i < years*monthPerYear) {
+        while (i < years * monthPerYear) {
             total = total + total * 7 / 100;
             i++;
             if (i % 6 == 0) {
@@ -86,11 +87,11 @@ public class Main {
 
     public static void task7() {
         System.out.println("\nЗадание 7:");
-        int friday = 3;
-        for (int i = 1; i <= 31; i++) {
-            if ((i - friday) % 7 == 0) {
-                System.out.println("Сегодня пятница, "+i+"-е число. Необходимо подготовить отчет.");
-            }
+        int friday = 2;
+        for (; friday <= 31; friday = friday + 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+
         }
     }
+
 }
