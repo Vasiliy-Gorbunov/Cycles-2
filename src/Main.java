@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -21,13 +22,13 @@ public class Main {
     public static void task2() {
         System.out.println("\nЗадание 2:");
         int i = 0;
-        while (i<10){
+        while (i < 10) {
             i++;
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
         System.out.println();
-        for (; i > 0 ; i--) {
-            System.out.print(i+" ");
+        for (; i > 0; i--) {
+            System.out.print(i + " ");
         }
     }
 
@@ -37,8 +38,19 @@ public class Main {
         int bornPer1000 = 17;
         int deathPer1000 = 8;
         for (int i = 1; i <= 10; i++) {
-            population = population + (bornPer1000*population/1000) - (deathPer1000*population/1000);
-            System.out.println("Год "+i+" численность населения составляет "+population+" чел.");
+            population = population + (bornPer1000 * population / 1000) - (deathPer1000 * population / 1000);
+            System.out.println("Год " + i + " численность населения составляет " + population + " чел.");
+        }
+    }
+
+    public static void task4() {
+        System.out.println("\nЗадание 4:");
+        int total = 15000;
+        int i = 0;
+        while (total < 12_000_000) {
+            total = total + total * 7 / 100;
+            i++;
+            System.out.println("Месяц " + i + ". Сумма накоплений равна: " + total + " рублей.");
         }
     }
 }
